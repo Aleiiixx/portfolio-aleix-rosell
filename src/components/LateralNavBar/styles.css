@@ -1,0 +1,20 @@
+.NavBar{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--secondary-color);
+}
+
+.NavBarElement {
+    border-left: 2px solid transparent;
+    padding: 8px 8px;
+    box-sizing: border-box;
+    transition: border-color 0.1s;
+    color: var(--primary-font-color);
+}
+
+.NavBarElement:hover {
+    border-left: 2px solid white;
+    color: white;
+}
