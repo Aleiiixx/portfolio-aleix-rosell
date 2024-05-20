@@ -1,6 +1,7 @@
 ---
 import { ViewTransitions } from 'astro:transitions';
 import LateralNavBar from '../components/LateralNavBar/LateralNavBar.astro'
+import FilesSection from '../components/FilesSection/FilesSection.astro';
 import '../styles/global.css'
 
 interface Props {
@@ -24,6 +25,7 @@ const { title } = Astro.props;
 	<body class="h-lvh bg flex flex-row bg-primary">
 		
 		<LateralNavBar/>
+		<FilesSection/>
 		<slot />
 		
 	</body>

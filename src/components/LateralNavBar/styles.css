@@ -7,8 +7,10 @@
 }
 
 .NavBarElement {
+    position: relative;
+    cursor: pointer;
     border-left: 2px solid transparent;
-    padding: 8px 8px;
+    padding: 12px 12px;
     box-sizing: border-box;
     transition: border-color 0.1s;
     color: var(--primary-font-color);
@@ -17,4 +19,42 @@
 .NavBarElement:hover {
     border-left: 2px solid white;
     color: white;
+    background-color: var(--secondary-color-hover);
+}
+
+.NavBarElement span{
+    visibility: hidden;
+    width: fit-content;
+    white-space: nowrap;
+    background-color: var(--secondary-color);
+    color: rgba(255, 255, 255, 0.753);
+    z-index: 1;
+    position: absolute;
+    transform-origin: top left;
+    left: 110%;
+    top: 25%;
+    padding: 2px 16px;
+    border-radius: 4px;
+    scale: 0.9;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.NavBarElement span::after{
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent var(--secondary-color) transparent transparent;
+}
+
+.NavBarElement:hover span{
+    visibility: visible;
+}
+
+.NavBar svg{
+    height: 36px;
+    width: 36px;
 }
