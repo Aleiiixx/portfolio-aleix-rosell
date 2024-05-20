@@ -7,6 +7,6 @@
 }
 
 body {
-    font-family: var(--font-family);
+    font-family: "IBM Plex Mono", monospace;
     color: var(--primary-color);
 }

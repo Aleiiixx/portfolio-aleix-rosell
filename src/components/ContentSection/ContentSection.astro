@@ -1,0 +1,17 @@
+---
+import './styles.css'
+const numbers = Array.from({ length: 40 }, (_, i) => i + 1);
+---
+
+<section class="contentDisplaySection">
+    <div class="content">
+        <div class="lineNumbers">
+            {numbers.map((number) => (
+                <div>{number}</div>
+            ))}
+        </div>
+        <div class="contentSection">
+            <slot/>
+        </div>
+    </div>
+</section>

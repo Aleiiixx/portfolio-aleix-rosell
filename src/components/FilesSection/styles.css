@@ -9,10 +9,12 @@
 .filesDisplaySection h3{
     padding: 12px 16px;
     color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
 }
 
 .filesDisplaySection h2{
     padding: 6px 16px;
     background-color: var(--secondary-color);
     color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
 }
