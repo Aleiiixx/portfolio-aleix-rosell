@@ -9,7 +9,7 @@ import { topInfoNavBarButtons, bottomInfoNavBarButtons } from './content';
         {
             topInfoNavBarButtons.map(element => (
                 <li class="NavBarElement">
-                    <a href="" set:html={element.svg}>
+                    <a href={element.href} set:html={element.svg}>
                         <span set:html={element.hoverText}></span>
                     </a>
                 </li>
@@ -20,7 +20,7 @@ import { topInfoNavBarButtons, bottomInfoNavBarButtons } from './content';
         {
             bottomInfoNavBarButtons.map(element => (
                 <li class="NavBarElement">
-                    <a href={element.href} set:html={element.svg} target='blank'>
+                    <a href={element.href} set:html={element.svg} target='blank' title={element.hoverText} aria-labelledby="titulo-conocimientos descripcion-conocimientos">
                         <span set:html={element.hoverText}></span>
                     </a>
                 </li>
