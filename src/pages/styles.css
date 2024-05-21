@@ -1,0 +1,13 @@
+.mainIndexSection{
+    padding: 10% 5%;
+}
+
+.mainIndexTitle{
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+.mainIndexSubtitle{
+    font-size: 3rem;
+    font-weight: 300;
+}
