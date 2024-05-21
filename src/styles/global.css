@@ -1,11 +1,12 @@
 :root {
     --primary-color: #282c34;
     --secondary-color: #333842;
+    --secondary-color-hover: #393e47;
     --tertiary-color: #21252b;
     --primary-font-color: #707478;
 }
 
 body {
-    font-family: var(--font-family);
+    font-family: "IBM Plex Mono", monospace;
     color: var(--primary-color);
 }
