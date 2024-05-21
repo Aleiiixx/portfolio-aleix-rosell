@@ -1,0 +1,21 @@
+.fileElement{
+    padding: 2px 16px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: start;
+    gap: 8px;
+    box-sizing: border-box;
+}
+
+.fileElement:hover{
+    background-color: var(--primary-color);
+}
+
+.fileElement span{
+    color: var(--primary-font-color);
+}
+
+.svg-icon{
+    width: 22px;
+}

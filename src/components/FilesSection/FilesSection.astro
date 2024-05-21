@@ -1,9 +1,17 @@
 ---
 import './styles.css'
+import FilesLabels from './FilesLabels/FilesLabels.astro'
+import { files } from './content';
 
 ---
 
 <section class="filesDisplaySection">
     <h3>EXPLORER</h3>
     <h2>PORTFOLIO</h2>
+    {
+        files.map(element =>(
+            <FilesLabels icon={element.svg} name={element.name} href={element.href}></FilesLabels>
+        ))
+    }
+    
 </section>
