@@ -3,11 +3,41 @@
 }
 
 .mainIndexTitle{
-    font-size: 5rem;
-    font-weight: 700;
+    font-size: calc(1rem + 2.5vw);
+    font-weight: 800;
 }
 
 .mainIndexSubtitle{
-    font-size: 3rem;
-    font-weight: 300;
+    font-size: calc(1rem + 1vw);
+    font-weight: 400;
 }
+
+.mainIndexText{
+    width: 75%;
+    font-weight: 300;
+    margin-top: 32px;
+}
+
+.downloadCVButton{
+    background-color: #4d78cc;
+    color: white;
+    padding: 8px;
+    width: fit-content;
+    margin-top: 32px;
+    white-space: nowrap;
+}
+
+.downloadCVButton:hover{
+    background-color: #3d6dce;
+    scale: 1.02;
+}
+
+.contentIndexText{
+    display: inline;
+}
+
+.tagIndexText{
+    color: #b95c65;
+    display: inline;
+}
+
