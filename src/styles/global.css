@@ -1,12 +1,32 @@
 :root {
-    --primary-color: #282c34;
-    --secondary-color: #333842;
+    --primary-color: #111111;
+    --secondary-color: #252525;
     --secondary-color-hover: #393e47;
-    --tertiary-color: #21252b;
+    --tertiary-color: #111111;
     --primary-font-color: #707478;
 }
 
 body {
     font-family: "IBM Plex Mono", monospace;
     color: var(--primary-color);
+}
+
+body::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
 }

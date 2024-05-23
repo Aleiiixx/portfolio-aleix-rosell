@@ -9,7 +9,7 @@
 }
 
 .fileElement:hover{
-    background-color: var(--primary-color);
+    background-color: #677e0b17;
 }
 
 .fileElement span{
@@ -18,4 +18,5 @@
 
 .svg-icon{
     width: 22px;
+    height: 32px;
 }
