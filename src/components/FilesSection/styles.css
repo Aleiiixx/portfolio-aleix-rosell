@@ -4,6 +4,7 @@
     flex-direction: column;
     background-color: var(--tertiary-color);
     height: 100%;
+    resize: both;
 }
 
 .filesDisplaySection h3{
@@ -17,4 +18,28 @@
     background-color: var(--secondary-color);
     color: rgba(255, 255, 255, 0.8);
     font-size: 1rem;
+}
+
+@media (max-width: 650px) {
+    .filesDisplaySection{
+        display: none;
+    }
+}
+
+@media (max-width: 760px) {
+    .filesDisplaySection{
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    
+}
+
+@media (max-width: 1280px) {
+    
+}
+
+@media (max-width: 1536px) {
+    
 }
