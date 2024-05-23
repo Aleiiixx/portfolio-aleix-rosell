@@ -1,0 +1,38 @@
+---
+import './styles.css'
+import { files } from '../FilesSection/content'
+
+
+interface Props {
+	selectedFile: string;
+}
+
+const { selectedFile } = Astro.props;
+---
+
+<nav class="navigationBar">
+    <div class="windowButtons">
+        <button>
+            <svg width="16" height="16" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15" fill="#EA6B63"/></svg>
+        </button>
+        <button>
+            <svg width="16" height="16" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15" fill="#F3BE4C"/></svg>
+        </button>
+        <button>
+            <svg width="16" height="16" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15" fill="#5DC850"/></svg>
+        </button>
+    </div>
+    <ul class="filesNavigationList">
+        {
+            files.map( element => (
+                 <a href={element.href}>
+                    <li class={`filesNavigationItem ${element.name.split('.')[0] === selectedFile ? 'selectedNavBar' : ''}`}>
+                        <button set:html={element.svg}>
+                            <span>{element.name}</span>
+                        </button>
+                    </li>
+                </a>
+            ))
+        }
+    </ul>
+</nav>

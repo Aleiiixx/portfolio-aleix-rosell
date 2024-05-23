@@ -14,7 +14,7 @@ export const files = [
     },
     {
         name: 'contact.css',
-        href: '/',
+        href: '/contact',
         svg: `
             <svg width="25" height="25" class="svg-icon" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="1.08105" y="1" width="22.7769" height="22.7769" rx="4.5" fill="#13BFF4"/>
@@ -27,7 +27,7 @@ export const files = [
     },
     {
         name: 'projects.json',
-        href: '/personal-projects',
+        href: '/projects',
         svg: `
             <svg width="25" height="25" class="svg-icon" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="1" y="1.22314" width="22.7769" height="22.7769" rx="4.5" fill="#C0E713"/>

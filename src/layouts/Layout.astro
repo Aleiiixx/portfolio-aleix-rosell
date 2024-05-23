@@ -1,6 +1,6 @@
 ---
 import { ViewTransitions } from 'astro:transitions';
-import LateralNavBar from '../components/LateralNavBar/LateralNavBar.astro'
+import NavigationBar from '../components/NavigationBar/NavigationBar.astro';
 import FilesSection from '../components/FilesSection/FilesSection.astro';
 import ContentSection from '../components/ContentSection/ContentSection.astro';
 import '../styles/global.css'
@@ -8,9 +8,10 @@ import '../styles/global.css'
 interface Props {
 	title: string;
 	linesNumber: number;
+	selectedFile: string;
 }
 
-const { title, linesNumber } = Astro.props;
+const { title, linesNumber, selectedFile } = Astro.props;
 ---
 
 <!doctype html>
@@ -27,9 +28,9 @@ const { title, linesNumber } = Astro.props;
 		<title>{title}</title>
 		<ViewTransitions/>
 	</head>
-	<body class="h-lvh w-full flex flex-col bg-primary">
+	<body class="h-lvh w-full flex flex-col bg-primary overflow-hidden">
 		
-		
+		<NavigationBar selectedFile={selectedFile}/>
 		<div class="flex flex-row w-full">
 			<FilesSection/>
 			<ContentSection linesNumber={linesNumber}>
