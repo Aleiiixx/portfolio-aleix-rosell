@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+.fileElement:first-of-type{
+    margin-top: 8px;
+}
+
 .fileElement:hover{
     background-color: #677e0b17;
 }

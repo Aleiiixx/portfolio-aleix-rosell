@@ -1,5 +1,6 @@
 .navigationBar{
     display: flex;
+    background-color: var(--secondary-color);
 }
 
 .windowButtons{
@@ -11,6 +12,7 @@
     align-items: center;
     justify-content: start;
     padding: 0px 16px;
+    border-bottom: 1px solid #80808028;
 }
 
 .windowButtons svg{
@@ -36,6 +38,7 @@
 .selectedNavBar{
     background-color: var(--primary-color);
     color: rgba(255, 255, 255, 0.795);
+    border-bottom: none;
 }
 
 .filesNavigationItem button{
@@ -43,6 +46,11 @@
     flex-direction: row-reverse;
     gap: 8px;
     align-items: center;
+}
+
+.fillArea{
+    flex-grow: 1;
+    background-color: aqua;
 }
 
 @media (max-width: 760px) {

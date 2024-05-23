@@ -3,6 +3,7 @@ import { ViewTransitions } from 'astro:transitions';
 import NavigationBar from '../components/NavigationBar/NavigationBar.astro';
 import FilesSection from '../components/FilesSection/FilesSection.astro';
 import ContentSection from '../components/ContentSection/ContentSection.astro';
+import ToolBar from '../components/ToolBar/ToolBar.astro';
 import '../styles/global.css'
 
 interface Props {
@@ -28,10 +29,11 @@ const { title, linesNumber, selectedFile } = Astro.props;
 		<title>{title}</title>
 		<ViewTransitions/>
 	</head>
-	<body class="h-lvh w-full flex flex-col bg-primary overflow-hidden">
+	<body>
 		
 		<NavigationBar selectedFile={selectedFile}/>
-		<div class="flex flex-row w-full">
+		<ToolBar/>
+		<div class="LayoutMainContentSection">
 			<FilesSection/>
 			<ContentSection linesNumber={linesNumber}>
 				<slot />
@@ -40,5 +42,8 @@ const { title, linesNumber, selectedFile } = Astro.props;
 		
 	</body>
 </html>
+<style>
+	
+</style>
 
 
