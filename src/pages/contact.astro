@@ -1,19 +1,52 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import './styles.css';
+import './contactStyles.css';
 ---
 
-<Layout title="Welcome to Astro." linesNumber={38} selectedFile="contact">
+<Layout title="Welcome to Astro." linesNumber={35} selectedFile="contact">
     <section class="contactSection">
-        <h1>.contactInfo &#123;</h1>
-        <ul>
-            <li><span class="contactPropertyName">Name:</span><span> Aleix Rosell Morell</span></li>
-            <li><span class="contactPropertyName">Phone:</span><span> +34 622 00 13 216,</span></li>
-            <li><span class="contactPropertyName">Email:</span><span> aleixrosellmorell@gmail.com,</span></li>
-            <li><span class="contactPropertyName">Location:</span><span> Vila-Seca - Tarragona,</span></li>
-            <li><span class="contactPropertyName">LinkedIn:</span><span> /aleix-rosell-morell</span></li>
-        </ul>
-        <h1>&#125;</h1>
+        <section class="contactInfo">
+            <h1>.contactInfo &#123;</h1>
+            <ul>
+                <li><span class="contactPropertyName">Name:</span><span> Aleix Rosell Morell;</span></li>
+                <li><span class="contactPropertyName">Phone:</span><span> +34 622 00 13 216;</span></li>
+                <li><span class="contactPropertyName">Email:</span><span> aleixrosellmorell@gmail.com;</span></li>
+                <li><span class="contactPropertyName">Location:</span><span> Vila-Seca - Tarragona;</span></li>
+                <li><span class="contactPropertyName">LinkedIn:</span><span> /aleix-rosell-morell;</span></li>
+            </ul>
+            <h1>&#125;</h1>
+        </section>
+        <section class="contactForm">
+            <form action="">
+                <fieldset>
+                    <legend>CONTACT FORM</legend>
+
+                    <div class="nameAndEmailFormContainer">
+                        <div class="nameFormSection labelInputCombo">
+                            <label for="name">NAME</label>
+                            <input type="text" name="name" id="name" required>
+                        </div>
+                        <div class="emailFormSection labelInputCombo">
+                            <label for="name">EMAIL</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                    </div>
+                    <div class="subjectFormSection labelInputCombo">
+                        <label for="name">SUBJECT</label>
+                        <input type="text" name="subject" id="subject" required>
+                    </div>
+                    <div class="labelInputCombo">
+                        <label for="name">MESSAGE</label>
+                        <textarea name="" id="" rows="5"></textarea>
+                    </div>
+                    <div class="submitButtonContainer">
+                        <button type="submit">
+                            <span>SUBMIT</span>
+                        </button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
     </section>
 </Layout>
 

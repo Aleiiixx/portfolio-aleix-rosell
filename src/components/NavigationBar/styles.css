@@ -35,6 +35,10 @@
     border-right: 1px solid rgba(255, 255, 255, 0.11);
 }
 
+.filesNavigationItem:first-of-type{
+    border-left: 1px solid rgba(255, 255, 255, 0.11);
+}
+
 .selectedNavBar{
     background-color: var(--primary-color);
     color: rgba(255, 255, 255, 0.795);

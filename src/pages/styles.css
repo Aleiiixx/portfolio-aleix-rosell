@@ -44,22 +44,7 @@
     display: inline;
 }
 
-.contactSection{
-    font-size: calc(1em + 0.5vw);
-    padding: 5% 5%;
-}
 
-.contactSection h1{
-    color: #c28250;
-}
-
-.contactSection li{
-    padding-left: 2em;
-}
-
-.contactPropertyName{
-    color: #5ebcd8;
-}
 /* Media queries */
 @media (max-width: 1536px) {
     .mainIndexTitle {
@@ -96,9 +81,5 @@
 @media (max-width: 650px) {
     .mainIndexSection {
         padding: 10% 0%;
-    }
-
-    .contactSection{
-        font-size: calc(1em + 0.1vw);
     }
 }
