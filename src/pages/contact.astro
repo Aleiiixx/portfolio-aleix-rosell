@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import './contactStyles.css';
+import '../styles/contactStyles.css';
 ---
 
 <Layout title="Welcome to Astro." linesNumber={35} selectedFile="contact">
@@ -17,27 +17,27 @@ import './contactStyles.css';
             <h1>&#125;</h1>
         </section>
         <section class="contactForm">
-            <form action="">
+            <form action="https://formsubmit.co/aleixrosellmorell@gmail.com" method="POST">
                 <fieldset>
                     <legend>CONTACT FORM</legend>
 
                     <div class="nameAndEmailFormContainer">
                         <div class="nameFormSection labelInputCombo">
-                            <label for="name">NAME</label>
-                            <input type="text" name="name" id="name" required>
+                            <label for="form-name">NAME</label>
+                            <input type="text" name="name" id="form-name" required>
                         </div>
                         <div class="emailFormSection labelInputCombo">
-                            <label for="email">EMAIL</label>
-                            <input type="email" name="email" id="email" required>
+                            <label for="form-email">EMAIL</label>
+                            <input type="email" name="email" id="form-email" required>
                         </div>
                     </div>
                     <div class="subjectFormSection labelInputCombo">
-                        <label for="subject">SUBJECT</label>
-                        <input type="text" name="subject" id="subject" required>
+                        <label for="form-subject">SUBJECT</label>
+                        <input type="text" name="subject" id="form-subject" required>
                     </div>
                     <div class="labelInputCombo">
-                        <label for="message">MESSAGE</label>
-                        <textarea name="" id="" rows="5"></textarea>
+                        <label for="form-message">MESSAGE</label>
+                        <textarea name="message" id="form-message" rows="5" ></textarea>
                     </div>
                     <div class="submitButtonContainer">
                         <button type="submit">

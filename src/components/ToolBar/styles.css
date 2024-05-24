@@ -3,7 +3,7 @@
     background-color: var(--primary-color);
     display: flex;
     flex-direction: row;
-    padding: 24px 32px;
+    padding: 24px 16px;
     gap: 32px;
     border-bottom: 1px solid #8080802d;
     align-items: center;

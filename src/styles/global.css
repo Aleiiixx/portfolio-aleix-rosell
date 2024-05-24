@@ -4,11 +4,12 @@
     --secondary-color-hover: #393e47;
     --tertiary-color: #111111;
     --primary-font-color: #707478;
-    
+
     --js-purple-color: #9e80ce;
     --js-orange-color: #d39560;
     --js-red-color: #d86068;
     --js-green-color: #7bc36e;
+    --js-green-bold-color: #3ae41c;
     --js-blue-color: #56b6c2;
     --js-yellow-color: #ffc922;
 }
@@ -37,6 +38,10 @@ body {
 }
 .jsGreenColor{
     color: var(--js-green-color)
+}
+.jsGreenBoldColor{
+    color: var(--js-green-bold-color);
+    font-weight: 800;
 }
 .jsPurpleColor{
     color: var(--js-purple-color)

@@ -33,12 +33,15 @@
     font-size: 1rem;
     padding: .75rem;
     resize: none;
+    background: #e2d6cc;
+    color: black;
 }
 
 .contactForm fieldset{
     display: flex;
     flex-direction: column;
     gap: 32px;
+    color: rgba(255, 255, 255, 0.596);
 }
 
 .labelInputCombo{
