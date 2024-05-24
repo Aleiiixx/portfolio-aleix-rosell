@@ -1,0 +1,23 @@
+.experienceObjectSymbol{
+    padding-left: 2em;
+}
+
+.experiencePropertyList{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.experiencePropertyName{
+    padding-left: 4em;
+}
+
+.experienceText{
+    display: block;
+}
+
+.experienceDescriptionContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}

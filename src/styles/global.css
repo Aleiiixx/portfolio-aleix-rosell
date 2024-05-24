@@ -4,6 +4,13 @@
     --secondary-color-hover: #393e47;
     --tertiary-color: #111111;
     --primary-font-color: #707478;
+    
+    --js-purple-color: #9e80ce;
+    --js-orange-color: #d39560;
+    --js-red-color: #d86068;
+    --js-green-color: #7bc36e;
+    --js-blue-color: #56b6c2;
+    --js-yellow-color: #ffc922;
 }
 
 body {
@@ -23,4 +30,23 @@ body {
     width: 100%;
     overflow: scroll;
     scrollbar-width: none;
+}
+
+.jsRedColor{
+    color: var(--js-red-color)
+}
+.jsGreenColor{
+    color: var(--js-green-color)
+}
+.jsPurpleColor{
+    color: var(--js-purple-color)
+}
+.jsOrangeColor{
+    color: var(--js-orange-color)
+}
+.jsBlueColor{
+    color: var(--js-blue-color)
+}
+.jsYellowColor{
+    color: var(--js-yellow-color)
 }
