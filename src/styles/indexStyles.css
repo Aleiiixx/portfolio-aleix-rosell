@@ -83,3 +83,23 @@
         padding: 10% 0%;
     }
 }
+
+@media (max-width: 480px) {
+    .mainIndexSection {
+        padding: 10% 0%;
+    }
+
+    .mainIndexTitle {
+        font-size: calc(6vw);
+    }
+
+    .mainIndexSubtitle {
+        font-size: calc(4vw);
+    }
+
+    .mainIndexText {
+        width: 100%;
+        font-weight: 300;
+        margin-top: 32px;
+    }
+}
