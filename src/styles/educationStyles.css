@@ -1,0 +1,23 @@
+.educationSection{
+   display: flex;
+   flex-direction: row;
+   height: 100%;
+   color: var(--json-white-color);
+}
+
+.educationOficialSection,
+.educationAdditionalSection{
+    display: flex;
+    flex: 0 100%;
+    flex-direction: column;
+    padding: 1rem 2rem;
+}
+
+.educationTitleSection{
+    padding-left: 2rem;
+}
+
+.educationDegreeSection{
+    padding-left: 4rem;
+}
+

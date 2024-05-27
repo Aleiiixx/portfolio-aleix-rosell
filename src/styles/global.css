@@ -12,6 +12,16 @@
     --js-green-bold-color: #3ae41c;
     --js-blue-color: #56b6c2;
     --js-yellow-color: #ffc922;
+
+    --json-blue-color: #56c1c2;
+    --json-green-color: #40e270;
+    --json-purple-color: #8c7fe1;
+    --json-yellow-color: #dcf078;
+    --json-white-color: #ebebe6;
+
+    --sql-blue-color: #007fbf;
+    --sql-orange-color: #ee9100;
+    --sql-white-color: #ffffff;
 }
 
 body {
@@ -32,6 +42,8 @@ body {
     overflow: scroll;
     scrollbar-width: none;
 }
+
+
 
 .jsRedColor{
     color: var(--js-red-color)
@@ -54,4 +66,29 @@ body {
 }
 .jsYellowColor{
     color: var(--js-yellow-color)
+}
+.jsonWhiteColor{
+    color: var(--json-white-color);
+}
+.jsonGreenColor{
+    color: var(--json-green-color);
+}
+.jsonPurpleColor{
+    color: var(--json-purple-color);
+}
+.jsonBlueColor{
+    color: var(--json-blue-color);
+}
+.jsonYellowColor{
+    color: var(--json-yellow-color);
+}
+
+.sqlWhiteColor{
+    color: var(--sql-white-color);
+}
+.sqlBlueColor{
+    color: var(--sql-blue-color);
+}
+.sqlOrangeColor{
+    color: var(--sql-orange-color);
 }

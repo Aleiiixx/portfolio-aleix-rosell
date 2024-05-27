@@ -27,3 +27,13 @@
     gap: 8px;
     margin-top: 4px;
 }
+
+@media (max-width: 760px) {
+    .experienceObjectSymbol{
+        padding-left: 1em;
+    }
+
+    .experiencePropertyName{
+        padding-left: 2em;
+    }
+}

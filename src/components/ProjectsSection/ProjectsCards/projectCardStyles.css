@@ -1,0 +1,43 @@
+.projectCardMainContainer{
+    background-color: #808080;
+    border-radius: 44px;
+    padding: 16px;
+    color: rgba(0, 0, 0, 0.74);
+    /* box-shadow: 5px 5px 10px rgba(204, 204, 203, 0.226); */
+}
+
+.mainImage{
+    border-radius: 28px;
+    aspect-ratio: 16/9;
+}
+
+.projectCardMainContainer h1{
+    font-size: 24px;
+    display: inline;
+    font-weight: 700;
+}
+
+.projectCardMainContainer span{
+    font-weight: 500;
+}
+
+.projectCardMainContainer p{
+    font-weight: 400;
+}
+
+.porjectCardInfoSection{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.projectCardUsedTechs{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    padding: 4px;
+}
+
+.projectCardUsedTechs svg{
+    height: 32px;
+}

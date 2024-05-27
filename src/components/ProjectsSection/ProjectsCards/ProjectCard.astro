@@ -1,0 +1,65 @@
+---
+import './projectCardStyles.css'
+import HTMLIcon from '../../../img/HTMLIcon.svg'
+import ANGULARIcon from '../../../img/AngularIcon.svg'
+import REACTIcon from '../../../img/ReactIcon.svg'
+import CSSIcon from '../../../img/CSSIcon.svg'
+import NODEIcon from '../../../img/NODEIcon.svg'
+import dgusta from '../../../img/LandingMain.png'
+import trellone from '../../../img/Trellone.png'
+import { manifest } from 'astro:ssr-manifest';
+
+interface Props {
+	title: string;
+    subtitle: string;
+    description: string;
+    tags: string[];
+}
+
+const { title, description, subtitle, tags } = Astro.props;
+
+const getSrc = (name: string): string =>{
+    switch(name){
+        case 'angular':
+            return ANGULARIcon.src;
+        case 'react':
+            return REACTIcon.src;
+        case 'html':
+            return HTMLIcon.src;
+        case 'css':
+            return CSSIcon.src;
+        case 'node':
+            return NODEIcon.src;
+        default:
+            return "";
+    }   
+}
+
+const getImageSrc = (): string =>{
+    switch(title){
+        case 'TRELLONE':
+            return trellone.src;
+        case 'DGUSTA APP':
+            return dgusta.src;
+        default:
+            return "";
+    }   
+}
+---
+
+<div class="projectCardMainContainer">
+    <img class="mainImage" src={getImageSrc()} alt="">
+    <section class="porjectCardInfoSection">
+        <div>
+            <h1 class="projectCardTitle">{title}</h1>
+            <span>- {subtitle}</span>
+        </div>
+        <p class="projectCardDescription">{description}</p>
+        <div class="projectCardUsedTechs">
+            {tags.map(tag => (
+                <img src={getSrc(tag)} alt={tag} class="techIcon" />
+            ))
+            }
+        </div>
+    </section>
+</div>
