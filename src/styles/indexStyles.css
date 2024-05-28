@@ -30,8 +30,8 @@
 }
 
 .downloadCVButton:hover {
-    background-color: #617510;
-    color: white;
+    background-color: #c4f309;
+    /* color: white; */
     scale: 1.02;
 }
 

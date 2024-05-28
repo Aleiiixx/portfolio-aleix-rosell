@@ -5,6 +5,8 @@
     --tertiary-color: #111111;
     --primary-font-color: #707478;
 
+    --html-white-color: #cbd49b;
+
     --js-purple-color: #9e80ce;
     --js-orange-color: #d39560;
     --js-red-color: #d86068;
@@ -27,11 +29,11 @@
 body {
     font-family: "IBM Plex Mono", monospace;
     color: var(--primary-color);
-    height: 100vh; /* Asumiendo que "lvh" se refiere a la altura total de la ventana */
+    height: 100vh; 
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: #3490dc; /* Asumiendo un color de fondo primario; ajusta según tu diseño */
+    background-color: #3490dc;
     overflow: hidden;
 }
 
@@ -44,7 +46,9 @@ body {
 }
 
 
-
+.htmlWhiteColor{
+    color: var(--html-white-color);
+}
 .jsRedColor{
     color: var(--js-red-color)
 }

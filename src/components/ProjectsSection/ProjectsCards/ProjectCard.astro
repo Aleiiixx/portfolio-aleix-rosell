@@ -5,9 +5,13 @@ import ANGULARIcon from '../../../img/AngularIcon.svg'
 import REACTIcon from '../../../img/ReactIcon.svg'
 import CSSIcon from '../../../img/CSSIcon.svg'
 import NODEIcon from '../../../img/NODEIcon.svg'
+import ASTROIcon from '../../../img/ASTROIcon.svg'
 import dgusta from '../../../img/LandingMain.png'
 import trellone from '../../../img/Trellone.png'
+import portfolio from '../../../img/Portfolio.png'
 import { manifest } from 'astro:ssr-manifest';
+import Image from 'astro/components/Image.astro'
+import { getImage } from 'astro:assets'
 
 interface Props {
 	title: string;
@@ -30,17 +34,21 @@ const getSrc = (name: string): string =>{
             return CSSIcon.src;
         case 'node':
             return NODEIcon.src;
+        case 'astro':
+            return ASTROIcon.src;
         default:
             return "";
     }   
 }
 
-const getImageSrc = (): string =>{
+const getImageSrc = (): any =>{
     switch(title){
         case 'TRELLONE':
             return trellone.src;
         case 'DGUSTA APP':
             return dgusta.src;
+        case 'PORTFOLIO':
+            return portfolio.src;
         default:
             return "";
     }   

@@ -1,0 +1,63 @@
+footer{
+    position: fixed;
+    bottom: 0;
+    height: 25px;
+    width: 100%;
+    background-color: #2a2b21;
+    box-shadow: inset;
+    display: flex;
+    flex-direction: row;
+    color: #808080;
+    justify-content: space-between;
+}
+
+
+.footerLeftSection,
+.rightFooterSection{
+    display: flex;
+    flex-direction: row;
+}
+
+.rightFooterSection{
+    gap: 8px;
+    padding-right: 8px;
+}
+
+.rightFooterSection button{
+    margin-left: 0;
+}
+
+footer a:first-of-type{
+    margin-left: 8px;
+    padding: 0px 8px;
+}
+
+footer a{
+    display: flex;
+    flex-direction: row;
+    padding: 0px 4px;
+    align-items: center;
+    gap: 8px;
+    box-sizing: border-box;
+}
+
+footer button{
+    display: flex;
+    flex-direction: row;
+    padding: 0px 4px;
+    align-items: center;
+    gap: 2px;
+    box-sizing: border-box;
+    margin-left: 8px;
+}
+
+footer a:hover,
+footer button:hover{
+    background-color: #202019;
+}
+
+@media (max-width: 650px) {
+    .hideElementFooter{
+        display: none;
+    }
+}
