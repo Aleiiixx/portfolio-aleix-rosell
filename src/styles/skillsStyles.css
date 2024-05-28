@@ -1,0 +1,13 @@
+.skillsMainSection{
+    color: var(--sql-white-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.nextNewLine{
+    margin-bottom: 1rem;
+}
+
+.tab2{
+    margin-left: 2rem;
+}

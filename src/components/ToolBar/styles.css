@@ -1,0 +1,50 @@
+.toolBar{
+    width: 100%;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: row;
+    padding: 24px 16px;
+    gap: 32px;
+    border-bottom: 1px solid #8080802d;
+    align-items: center;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.toolBar button{
+    display: flex;
+    flex-direction: row;
+    color: #808080;
+    gap: 12px;
+    align-items: center;
+}
+
+.toolBar span{
+    font-size: 16px;
+}
+
+.toolBarHomeButton{
+    border: 1px solid #808080;
+    height: auto;
+    padding: 8px 12px ;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #232323;
+    gap: 16px;
+}
+
+.toolBarHomeButton svg{
+    height: 8px;
+    width: 8px;
+}
+
+.toolBarHomeButton svg:first-of-type{
+    height: 18px;
+    width: 18px;
+}
+
+.toolBarSeparator{
+    border-left: 1px solid #808080;
+    height: 100%;
+}
+

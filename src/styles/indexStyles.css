@@ -1,0 +1,106 @@
+.mainIndexSection {
+    padding: 10% 5%;
+}
+
+.mainIndexTitle {
+    font-size: calc(1rem + 2.5vw);
+    font-weight: 800;
+    width: 100%;
+}
+
+.mainIndexSubtitle {
+    font-size: calc(1rem + 1vw);
+    font-weight: 400;
+}
+
+.mainIndexText {
+    width: 75%;
+    font-weight: 300;
+    margin-top: 32px;
+}
+
+.downloadCVButton {
+    background-color: #BCE613;
+    color: var(--primary-color);
+    padding: 8px;
+    width: fit-content;
+    margin-top: 32px;
+    white-space: nowrap;
+    font-weight: 600;
+}
+
+.downloadCVButton:hover {
+    background-color: #c4f309;
+    /* color: white; */
+    scale: 1.02;
+}
+
+.contentIndexText {
+    display: inline;
+}
+
+.tagIndexText {
+    color: #B14F37;
+    display: inline;
+}
+
+
+
+/* Media queries */
+@media (max-width: 1536px) {
+    .mainIndexTitle {
+        font-size: calc(1rem + 3vw);
+    }
+
+    .mainIndexSubtitle {
+        font-size: calc(1rem + 1.5vw);
+    }
+}
+
+@media (max-width: 1280px) {
+    .mainIndexSubtitle {
+        font-size: calc(1rem + 0.5vw);
+    }
+}
+
+@media (max-width: 1024px) {
+    .mainIndexSection {
+        padding: 10% 0%;
+    }
+
+    .mainIndexSubtitle {
+        font-size: calc(1rem + 0.5vw);
+    }
+}
+
+@media (max-width: 760px) {
+    .mainIndexSubtitle {
+        font-size: calc(1rem + 0.2vw);
+    }
+}
+
+@media (max-width: 650px) {
+    .mainIndexSection {
+        padding: 10% 0%;
+    }
+}
+
+@media (max-width: 480px) {
+    .mainIndexSection {
+        padding: 10% 0%;
+    }
+
+    .mainIndexTitle {
+        font-size: calc(6vw);
+    }
+
+    .mainIndexSubtitle {
+        font-size: calc(4vw);
+    }
+
+    .mainIndexText {
+        width: 100%;
+        font-weight: 300;
+        margin-top: 32px;
+    }
+}

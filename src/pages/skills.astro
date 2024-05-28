@@ -1,0 +1,53 @@
+---
+import Layout from '../layouts/Layout.astro';
+import '../styles/skillsStyles.css'
+
+---
+
+<Layout title="Welcome to Astro." linesNumber={35} selectedFile="skills">
+    <section class="skillsMainSection">
+        <span class="sqlBlueColor nextNewLine">CREATE DATABASE IF NOT EXISTS<span class="sqlWhiteColor"> SKILLS;</span></span>
+        <span class="sqlBlueColor nextNewLine">USE<span class="sqlWhiteColor"> SKILLS;</span></span>
+        <span class="sqlBlueColor">CREATE TABLE<span class="sqlWhiteColor">  BACKEND (</span><span class="sqlWhiteColor">SkillNames<span class="sqlBlueColor"> varchar</span>(<span class="sqlOrangeColor">255</span>));</span></span>
+        <span class="sqlBlueColor">CREATE TABLE<span class="sqlWhiteColor">  FRONTEND (</span><span class="sqlWhiteColor">SkillNames<span class="sqlBlueColor"> varchar</span>(<span class="sqlOrangeColor">255</span>));</span></span>
+        <span class="sqlBlueColor nextNewLine">CREATE TABLE<span class="sqlWhiteColor">  OTHER (</span><span class="sqlWhiteColor">SkillNames<span class="sqlBlueColor"> varchar</span>(<span class="sqlOrangeColor">255</span>));</span></span>
+
+        <span class="sqlBlueColor">INSERT INTO <span class="sqlWhiteColor">BACKEND (SkillName)</span></span>
+        <span class="sqlBlueColor">VALUES</span>
+        <span class="nextNewLine">
+            (<span class="sqlOrangeColor">"Java"</span>),
+            (<span class="sqlOrangeColor">"Node.js"</span>),
+            (<span class="sqlOrangeColor">"PHP"</span>),
+            (<span class="sqlOrangeColor">"Android Studio"</span>),
+            (<span class="sqlOrangeColor">"Kotlin"</span>),
+            (<span class="sqlOrangeColor">"Docker"</span>),
+            (<span class="sqlOrangeColor">"Kotlin"</span>),
+            (<span class="sqlOrangeColor">"MySQL"</span>),
+            (<span class="sqlOrangeColor">"MongoDB"</span>),
+            (<span class="sqlOrangeColor">"Python"</span>);
+        </span>
+        <span class="sqlBlueColor">INSERT INTO <span class="sqlWhiteColor">FRONTEND (SkillName)</span></span>
+        <span class="sqlBlueColor">VALUES</span>
+        <span class="nextNewLine">
+            (<span class="sqlOrangeColor">"HTML"</span>),
+            (<span class="sqlOrangeColor">"CSS"</span>),
+            (<span class="sqlOrangeColor">"JavaScript"</span>),
+            (<span class="sqlOrangeColor">"TypeScript"</span>),
+            (<span class="sqlOrangeColor">"Angular"</span>),
+            (<span class="sqlOrangeColor">"React"</span>),
+            (<span class="sqlOrangeColor">"Bootstrap"</span>);
+        </span>
+        <span class="sqlBlueColor">INSERT INTO <span class="sqlWhiteColor">OTHER (SkillName)</span></span>
+        <span class="sqlBlueColor">VALUES</span>
+        <span class="nextNewLine">
+            (<span class="sqlOrangeColor">"English"</span>),
+            (<span class="sqlOrangeColor">"Git"</span>),
+            (<span class="sqlOrangeColor">"GitHub"</span>),
+            (<span class="sqlOrangeColor">"Figma"</span>),
+            (<span class="sqlOrangeColor">"Docker"</span>),
+            (<span class="sqlOrangeColor">"Postman"</span>),
+            (<span class="sqlOrangeColor">"Jira"</span>);
+        </span>
+    </section>
+    
+</Layout>

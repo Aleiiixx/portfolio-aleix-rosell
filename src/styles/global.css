@@ -1,11 +1,98 @@
 :root {
-    --primary-color: #282c34;
-    --secondary-color: #333842;
-    --tertiary-color: #21252b;
+    --primary-color: #111111;
+    --secondary-color: #252525;
+    --secondary-color-hover: #393e47;
+    --tertiary-color: #111111;
     --primary-font-color: #707478;
+
+    --html-white-color: #cbd49b;
+
+    --js-purple-color: #9e80ce;
+    --js-orange-color: #d39560;
+    --js-red-color: #d86068;
+    --js-green-color: #7bc36e;
+    --js-green-bold-color: #3ae41c;
+    --js-blue-color: #56b6c2;
+    --js-yellow-color: #ffc922;
+
+    --json-blue-color: #56c1c2;
+    --json-green-color: #40e270;
+    --json-purple-color: #8c7fe1;
+    --json-yellow-color: #dcf078;
+    --json-white-color: #ebebe6;
+
+    --sql-blue-color: #007fbf;
+    --sql-orange-color: #ee9100;
+    --sql-white-color: #ffffff;
 }
 
 body {
-    font-family: var(--font-family);
+    font-family: "IBM Plex Mono", monospace;
     color: var(--primary-color);
+    height: 100vh; 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #3490dc;
+    overflow: hidden;
+}
+
+.LayoutMainContentSection{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+
+.htmlWhiteColor{
+    color: var(--html-white-color);
+}
+.jsRedColor{
+    color: var(--js-red-color)
+}
+.jsGreenColor{
+    color: var(--js-green-color)
+}
+.jsGreenBoldColor{
+    color: var(--js-green-bold-color);
+    font-weight: 800;
+}
+.jsPurpleColor{
+    color: var(--js-purple-color)
+}
+.jsOrangeColor{
+    color: var(--js-orange-color)
+}
+.jsBlueColor{
+    color: var(--js-blue-color)
+}
+.jsYellowColor{
+    color: var(--js-yellow-color)
+}
+.jsonWhiteColor{
+    color: var(--json-white-color);
+}
+.jsonGreenColor{
+    color: var(--json-green-color);
+}
+.jsonPurpleColor{
+    color: var(--json-purple-color);
+}
+.jsonBlueColor{
+    color: var(--json-blue-color);
+}
+.jsonYellowColor{
+    color: var(--json-yellow-color);
+}
+
+.sqlWhiteColor{
+    color: var(--sql-white-color);
+}
+.sqlBlueColor{
+    color: var(--sql-blue-color);
+}
+.sqlOrangeColor{
+    color: var(--sql-orange-color);
 }

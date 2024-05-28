@@ -1,0 +1,15 @@
+---
+import './styles.css'
+
+interface Props{
+    icon: string;
+    name: string;
+    href: string;
+}
+
+const {icon, name, href} = Astro.props
+---
+
+<a class="fileElement" href={href} set:html={icon}>
+    <span>{name}</span>
+</a>

@@ -1,0 +1,248 @@
+.contactSection{
+    display: flex;
+    flex-direction: row;
+}
+
+.contactInfo{
+    flex: 0 45%;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    padding: 5% 1%;
+    border-right: 1px solid #c28250;
+}
+
+.contactInfo h1{
+    color: #c28250;
+}
+
+.contactInfo li{
+    padding-left: 2em;
+}
+
+.contactPropertyName{
+    color: #5ebcd8;
+}
+
+.contactForm{
+    flex: 0 55%;
+    padding: 2%;
+}
+
+.contactForm input,
+.contactForm textarea{
+    font-size: 1rem;
+    padding: .75rem;
+    resize: none;
+    background: #e2d6cc;
+    color: black;
+}
+
+.contactForm fieldset{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    color: rgba(255, 255, 255, 0.596);
+}
+
+.labelInputCombo{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.nameAndEmailFormContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 3%;
+    gap: 4%;
+}
+
+.nameFormSection,
+.emailFormSection{
+    flex: 0 48%;
+}
+
+.submitButtonContainer button{
+    background-color: #c28250;
+    color: var(--primary-color);
+    font-weight: 600;
+    padding: 1% 4%;
+}
+
+
+
+@media (min-width: 1280px) {
+    .contactSection{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .contactInfo{
+        flex: 0 45%;
+        font-size: calc(0.3rem + 1vw);
+        line-height: 2rem;
+        padding: 5% 1%;
+        border-right: 1px solid #c28250;
+    }
+    
+    .contactInfo h1{
+        color: #c28250;
+    }
+    
+    .contactInfo li{
+        padding-left: 2em;
+    }
+    
+    .contactPropertyName{
+        color: #5ebcd8;
+    }
+    
+    .contactForm{
+        flex: 0 55%;
+        padding: 2%;
+    }
+    
+    .contactForm input,
+    .contactForm textarea{
+        font-size: 1rem;
+        padding: .75rem;
+        resize: none;
+    }
+    
+    .contactForm fieldset{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    
+    .labelInputCombo{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .nameAndEmailFormContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 3%;
+        gap: 4%;
+    }
+    
+    .nameFormSection,
+    .emailFormSection{
+        flex: 0 48%;
+    }
+    
+    .submitButtonContainer button{
+        background-color: #c28250;
+        color: var(--primary-color);
+        font-weight: 600;
+        padding: 1% 4%;
+    }
+}
+
+@media (max-width: 1280px) {
+    .contactSection{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .contactInfo{
+        flex: 0 45%;
+        font-size: 1.4rem;
+        line-height: 2rem;
+        padding: 5% 1%;
+        border-bottom: 1px solid #c28250;
+        border-right: 0px;
+    }
+
+    
+    .contactInfo h1{
+        color: #c28250;
+    }
+    
+    .contactInfo li{
+        padding-left: 2em;
+    }
+    
+    .contactPropertyName{
+        color: #5ebcd8;
+    }
+    
+    .contactForm{
+        flex: 0 55%;
+        padding: 2%;
+    }
+    
+    .contactForm input,
+    .contactForm textarea{
+        font-size: 1rem;
+        padding: .75rem;
+        resize: none;
+    }
+    
+    .contactForm fieldset{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    
+    .labelInputCombo{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .nameAndEmailFormContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 3%;
+        gap: 4%;
+    }
+    
+    .nameFormSection,
+    .emailFormSection{
+        flex: 0 48%;
+    }
+    
+    .submitButtonContainer button{
+        background-color: #c28250;
+        color: var(--primary-color);
+        font-weight: 600;
+        padding: 1% 4%;
+    }
+}
+
+
+@media (max-width: 1024px) {
+
+    .nameFormSection,
+    .emailFormSection{
+        flex: 0 45%;
+    }
+}
+
+@media (max-width: 760px) {
+
+    .nameAndEmailFormContainer{
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+
+@media (max-width: 650px) {
+    .nameFormSection,
+    .emailFormSection{
+        flex: 0 30%;
+    }
+
+    .contactInfo{
+        font-size: 0.8rem;
+        padding-top: 0;
+    }
+}
+
+

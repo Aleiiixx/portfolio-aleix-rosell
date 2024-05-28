@@ -1,0 +1,16 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ProjectCard from '../components/ProjectsSection/ProjectsCards/ProjectCard.astro';
+import '../styles/projectsStyles.css'
+
+
+---
+
+<Layout title="Welcome to Astro." linesNumber={35} selectedFile="projects">
+    <div class="projectsMainContainer">
+        <ProjectCard title='DGUSTA APP' subtitle="RESTAURANT BOOKING APP" tags={['react', 'html', 'css', 'node']} description='During the development of the Dgusta app, I was responsible for designing and developing the landing page and the customer area with react. Additionally, I assisted with some backend tasks, such as creating the CRUD operations using Node.js.'/>
+        <ProjectCard title='TRELLONE' subtitle="TRELLO CLONE" tags={['angular', 'html', 'css', 'node']} description='During this personal project, I developed a Trello clone using Angular with drag-and-drop functionality. I also created the necessary backend for information management using Node.js.'/>
+        <ProjectCard title='PORTFOLIO' subtitle="CODE EDITOR PORTFOLIO" tags={['astro', 'html', 'css']} description='During this personal project, I developed a Trello clone using Angular with drag-and-drop functionality. I also created the necessary backend for information management using Node.js.'/>
+    </div>
+</Layout>
+

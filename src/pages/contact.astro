@@ -1,0 +1,52 @@
+---
+import Layout from '../layouts/Layout.astro';
+import '../styles/contactStyles.css';
+---
+
+<Layout title="Welcome to Astro." linesNumber={35} selectedFile="contact">
+    <section class="contactSection">
+        <section class="contactInfo">
+            <h1>.contactInfo &#123;</h1>
+            <ul>
+                <li><span class="contactPropertyName">Name:</span><span> Aleix Rosell Morell;</span></li>
+                <li><span class="contactPropertyName">Phone:</span><span> +34 622 00 13 26;</span></li>
+                <li><span class="contactPropertyName">Email:</span><span> aleixrosellmorell@gmail.com;</span></li>
+                <li><span class="contactPropertyName">Location:</span><span> Vila-Seca - Tarragona;</span></li>
+                <li><span class="contactPropertyName">LinkedIn:</span><span> /aleix-rosell-morell;</span></li>
+            </ul>
+            <h1>&#125;</h1>
+        </section>
+        <section class="contactForm">
+            <form action="https://formsubmit.co/aleixrosellmorell@gmail.com" method="POST">
+                <fieldset>
+                    <legend>CONTACT FORM</legend>
+
+                    <div class="nameAndEmailFormContainer">
+                        <div class="nameFormSection labelInputCombo">
+                            <label for="form-name">NAME</label>
+                            <input type="text" name="name" id="form-name" required>
+                        </div>
+                        <div class="emailFormSection labelInputCombo">
+                            <label for="form-email">EMAIL</label>
+                            <input type="email" name="email" id="form-email" required>
+                        </div>
+                    </div>
+                    <div class="subjectFormSection labelInputCombo">
+                        <label for="form-subject">SUBJECT</label>
+                        <input type="text" name="subject" id="form-subject" required>
+                    </div>
+                    <div class="labelInputCombo">
+                        <label for="form-message">MESSAGE</label>
+                        <textarea name="message" id="form-message" rows="5" ></textarea>
+                    </div>
+                    <div class="submitButtonContainer">
+                        <button type="submit">
+                            <span>SUBMIT</span>
+                        </button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </section>
+</Layout>
+

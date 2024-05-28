@@ -1,9 +1,29 @@
 ---
+import { imageConfig } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
+import '../styles/indexStyles.css'
 ---
 
-<Layout title="Welcome to Astro.">
-	
+<Layout title="Welcome to Astro." linesNumber={35} selectedFile="welcome">
+    <div class="mainIndexSection">
+        <h1 class="mainIndexTitle">
+            <span class="tagIndexText">&lt;H1&gt;</span>
+            <span class="contentIndexText htmlWhiteColor">ALEIX ROSELL</span>
+            <span class="tagIndexText">&lt;/H1&gt;</span>
+        </h1>
+        <h2 class="mainIndexSubtitle">
+            <span class="tagIndexText">&lt;H2&gt;</span>
+            <span class="contentIndexText htmlWhiteColor">FULL STACK DEVELOPER</span>
+            <span class="tagIndexText">&lt;/H2&gt;</span>
+        </h2>
+        <p class="mainIndexText">
+            <span class="tagIndexText">&lt;p&gt;</span>
+            <span class="contentIndexText">I am a developer with <span class="htmlWhiteColor">less than one year of experience</span>, passionate about learning and willing to embrace any technology, even if that means leaving my comfort zone. I enjoy both teamwork and solo projects. My greatest strength lies in my logical ability. I love facing challenges and treating them like puzzles, breaking them down into smaller problems to solve. <span class="htmlWhiteColor">Open to work!</span></span>
+            <span class="tagIndexText">&lt;/p&gt;</span>
+        </p>
+        <button class="downloadCVButton">
+            DOWNLOAD CV
+        </button>
+    </div>
 </Layout>
-
 
