@@ -231,6 +231,7 @@
         flex-direction: column;
         gap: 16px;
     }
+
 }
 
 @media (max-width: 650px) {
@@ -243,6 +244,18 @@
         font-size: 0.8rem;
         padding-top: 0;
     }
+
+    .contactForm input,
+    .contactForm textarea{
+        font-size: 0.8rem;
+        padding: .50rem;
+        resize: none;
+    }
+
+    .contactInfo{
+        font-size: 0.8rem;
+    }
+    
 }
 
 
